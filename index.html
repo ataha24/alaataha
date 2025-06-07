@@ -3,119 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alaa Taha | PhD Biomedical Engineering & MD Candidate </title>
+  <title>Alaa Taha | Biomedical Engineering & Medicine</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <style>
-    * {
-      box-sizing: border-box;
+    html, body {
       margin: 0;
       padding: 0;
-    }
-    body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(145deg, #1e1e2f, #11111b);
       color: #f0f0f0;
-      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
     }
     header {
-      padding: 4rem 2rem 2rem;
+      padding: 5rem 1rem 2rem;
       text-align: center;
       background: radial-gradient(circle at top left, #3f51b5, #1a1a2e);
-      position: relative;
-      overflow: hidden;
     }
-    header::after {
-      content: "";
-      position: absolute;
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 80%);
-      top: -100px;
-      right: -100px;
-      animation: pulse 10s infinite ease-in-out;
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 2.2rem;
       font-weight: 800;
+      background: linear-gradient(to right, #82f4e0, #c3a3f1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .typed-text {
       color: #82f4e0;
-      font-size: 1.4rem;
-      margin-top: 1rem;
+      font-size: 1rem;
+      margin-top: 0.8rem;
     }
     nav {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 2rem;
+      gap: 1rem;
       background-color: #14141f;
-      padding: 1rem 0;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
     nav a {
       color: #ccc;
       text-decoration: none;
       font-weight: 600;
-      transition: color 0.3s ease;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
     }
     nav a:hover {
-      color: #82f4e0;
+      color: #fff;
+      text-shadow: 0 0 5px #82f4e0;
     }
     section {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
     section h2 {
-      font-size: 2rem;
+      font-size: 1.6rem;
       margin-bottom: 1rem;
-      border-left: 5px solid #82f4e0;
+      border-left: 4px solid #82f4e0;
       padding-left: 1rem;
+    }
+    .glow-card {
+      background: linear-gradient(145deg, #1a1a2e, #2d2d44);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(130, 244, 224, 0.2);
+    }
+    .glow-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 50px rgba(130, 244, 224, 0.3);
     }
     ul {
       list-style: disc;
-      margin-left: 2rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #0d0d14;
-      font-size: 0.9rem;
-      color: #999;
+      margin-left: 1.5rem;
     }
     .highlight {
       color: #82f4e0;
       font-weight: 600;
     }
-    .glow-card {
-      background: linear-gradient(145deg, #1a1a2e, #2d2d44);
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 0 20px rgba(130, 244, 224, 0.2);
-      transition: transform 0.3s ease;
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #0d0d14;
+      font-size: 0.85rem;
+      color: #999;
+      border-top: 1px solid #333;
     }
-    .glow-card:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 40px rgba(130, 244, 224, 0.3);
-    }
-    .parallax-container {
-      perspective: 1000px;
-    }
-    .parallax-tilt {
-      transform-style: preserve-3d;
-      transition: transform 0.1s;
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .typed-text {
+        font-size: 0.9rem;
+      }
+      nav a {
+        font-size: 0.85rem;
+      }
+      section h2 {
+        font-size: 1.4rem;
+      }
+      .glow-card {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="profile.jpg" alt="Alaa Taha portrait" style="width:120px; height:120px; border-radius:50%; border:2px solid white; margin-bottom:1rem;" />
+  <div id="particles-js"></div>
+  <header data-aos="fade-down">
+    <img src="AT.jpeg" alt="Alaa Taha portrait" />
     <h1>Alaa Taha</h1>
     <div class="typed-text" id="typed"></div>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#leadership">Leadership</a>
@@ -124,50 +140,53 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about" class="glow-card parallax-container">
+  <section id="about" class="glow-card" data-aos="fade-up">
     <h2>About</h2>
-    <div class="parallax-tilt">
-      <p>I am a PhD candidate in Biomedical Engineering at Western University, specializing in machine learning, neuroimaging, and brain coordinate systems for deep brain stimulation. I'm also an incoming MD student at Stanford School of Medicine. My work spans stereotactic targeting, quality control tools, and open science. I am also passionate about equity-oriented clinical research in neuromodulation and orthopedic surgery.</p>
-    </div>
+    <p>I am a PhD candidate in Biomedical Engineering at Western University and an incoming MD student at Stanford. My research integrates machine learning, image analysis, and anatomical coordinate systems for brain mapping and deep brain stimulation. I'm also passionate about global health equity, open-source medical software, and advancing stereotactic neurosurgery through interpretable and reproducible methods.</p>
   </section>
 
-  <section id="leadership" class="glow-card">
+  <section id="leadership" class="glow-card" data-aos="fade-up">
     <h2>Leadership & Service</h2>
     <ul>
-      <li>Co-Founder & Executive Director – <a href="https://webstraw.ca" target="_blank">WebStraw</a></li>
+      <li>Co-Founder & Co-Executive Director – <a href="https://webstraw.ca" target="_blank">WebStraw</a></li>
       <li>Co-Founder & Managing Director – <a href="https://refuhope.com" target="_blank">RefuHope</a></li>
       <li>Co-Manager – <a href="https://stimulatingbrains.org" target="_blank">Stimulating Brains Podcast</a></li>
       <li>Facilitator – Deep Brain Stimulation Patient Support Group</li>
       <li>Chair – Biomedical Engineering Graduate Student Committee</li>
-      <li>Representative – Schulich Medicine and Society of Graduate Students Committees</li>
-      <li>Teaching Assistant – First/Second Year Biomedical Engineering Courses</li>
+      <li>Representative – Schulich School of Medicine & SOGS Committees</li>
+      <li>TA – Undergraduate Engineering (1st and 2nd year)</li>
     </ul>
   </section>
 
-  <section id="publications" class="glow-card">
-    <h2>Selected Publications</h2>
+  <section id="publications" class="glow-card" data-aos="fade-up">
+    <h2>Publications</h2>
     <ul>
-      <li>Abbass, Taha, et al. (2024). <span class="highlight">Imaging Neuroscience</span>. Fiducials for DBS localization and registration.</li>
-      <li>Haast, Kai, Taha, et al. (2024). <span class="highlight">eLife</span>. Mapping zona incerta via diffusion MRI.</li>
-      <li>Ogunsanya, Taha, et al. (2023). <span class="highlight">IJCARS</span>. CNN-based conversion of Gadolinium MRIs.</li>
-      <li>Taha et al. (2023). <span class="highlight">Nature Scientific Data</span>. Fiducial MRI datasets for QC and registration.</li>
-      <li>Taha et al. (2022). <span class="highlight">Neuromodulation</span>. Landmark-based targeting for DBS.</li>
-      <li>Chapter contributor – <span class="highlight">Connectomic Deep Brain Stimulation</span>, Academic Press (2022).</li>
+      <li>Abbass, Taha, et al. (2024). <span class="highlight">Imaging Neuroscience</span>.</li>
+      <li>Haast, Kai, Taha, et al. (2024). <span class="highlight">eLife</span>.</li>
+      <li>Ogunsanya, Taha, et al. (2023). <span class="highlight">Int J CARS</span>.</li>
+      <li>Taha et al. (2023). <span class="highlight">Sci Data</span>.</li>
+      <li>Taha et al. (2022). <span class="highlight">Neuromodulation</span>.</li>
+      <li>Abbass, Gilmore, Taha, et al. (2022). <span class="highlight">Brain Struct Funct</span>.</li>
+      <li>Elias, Taha, et al. (2022). <span class="highlight">Connectomic DBS, Academic Press</span>.</li>
+      <li>Taha, et al. (2021). <span class="highlight">Front. Psychiatry, J. Neurosurg.</span></li>
     </ul>
+    <p>Full list: <a href="https://scholar.google.ca/citations?user=453eH-8AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
   </section>
 
-  <section id="awards" class="glow-card">
-    <h2>Honors & Awards</h2>
+  <section id="awards" class="glow-card" data-aos="fade-up">
+    <h2>Awards</h2>
     <ul>
-      <li><strong>NSERC CGS-D</strong> – $120,000 National Doctoral Scholarship</li>
-      <li><strong>Parkinson Canada Award</strong> – $40,000 Graduate Award</li>
-      <li><strong>Merit Abstract Award</strong> – Organization for Human Brain Mapping (2024)</li>
-      <li><strong>Ontario Graduate Scholarship</strong> – Twice Awarded</li>
-      <li><strong>Mitacs Accelerate Fellowship</strong>, Best Abstracts (x2), Dean’s List, and more…</li>
+      <li>NSERC CGS-D ($120,000)</li>
+      <li>Parkinson Canada Award ($40,000)</li>
+      <li>Ontario Graduate Scholarship (x2)</li>
+      <li>Merit Abstract – OHBM 2024</li>
+      <li>Best Abstract – Canadian Neuromodulation Conference</li>
+      <li>Best Talk – Clinical Neurological Research Day</li>
+      <li>Mitacs Accelerate, Dean’s List, Youth Service Award</li>
     </ul>
   </section>
 
-  <section id="contact" class="glow-card">
+  <section id="contact" class="glow-card" data-aos="fade-up">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:ataha24@uwo.ca">ataha24@uwo.ca</a></p>
     <p>GitHub: <a href="https://github.com/YOUR_USERNAME" target="_blank">@YOUR_USERNAME</a></p>
@@ -177,8 +196,10 @@
     &copy; 2025 Alaa Taha
   </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    const typed = new Typed('#typed', {
+    AOS.init({ once: true });
+    new Typed('#typed', {
       strings: [
         'PhD in Biomedical Engineering',
         'Incoming MD @ Stanford',
@@ -189,18 +210,33 @@
       backSpeed: 25,
       loop: true
     });
-
-    // Parallax tilt effect
-    const container = document.querySelector('.parallax-container');
-    const inner = document.querySelector('.parallax-tilt');
-    container.addEventListener('mousemove', e => {
-      const { width, height, left, top } = container.getBoundingClientRect();
-      const x = e.clientX - left - width / 2;
-      const y = e.clientY - top - height / 2;
-      inner.style.transform = `rotateX(${-y / 25}deg) rotateY(${x / 25}deg)`;
-    });
-    container.addEventListener('mouseleave', () => {
-      inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 80 },
+        color: { value: '#82f4e0' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.3 },
+        size: { value: 4 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#82f4e0',
+          opacity: 0.2,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: 'grab' },
+          onclick: { enable: true, mode: 'push' }
+        },
+        modes: {
+          grab: { distance: 200, line_linked: { opacity: 0.5 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
     });
   </script>
 </body>
