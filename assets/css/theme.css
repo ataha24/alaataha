@@ -1,0 +1,55 @@
+/* page accent switching */
+body[data-accent="research"]{
+  --accent: var(--a1);
+  --accent2: var(--a2);
+}
+body[data-accent="leadership"]{
+  --accent: var(--a2);
+  --accent2: var(--a1);
+}
+body[data-accent="publications"]{
+  --accent: #ffd479;
+  --accent2: var(--a2);
+}
+body[data-accent="about"]{
+  --accent: #9be7ff;
+  --accent2: var(--a1);
+}
+
+/* “BAM” continuity line under section headings */
+.sectionhead h2{
+  position:relative;
+  padding-left: 12px;
+}
+.sectionhead h2::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top: 3px;
+  width: 4px;
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--accent), var(--accent2));
+  box-shadow: 0 0 18px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+/* subtle page title style */
+.page-title{
+  margin:0;
+  font-size: 24px;
+  letter-spacing: -0.4px;
+}
+.page-sub{
+  margin-top: 8px;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 85ch;
+  font-size: 15px;
+}
+
+/* premium divider */
+.hr{
+  height:1px;
+  background: rgba(255,255,255,.06);
+  margin: 14px 0;
+}

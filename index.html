@@ -4,257 +4,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alaa Taha | Biomedical Engineering & Medicine</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(145deg, #1e1e2f, #11111b);
-      color: #f0f0f0;
-      scroll-behavior: smooth;
-    }
-    #particles-js {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-    header {
-      padding: 5rem 1rem 2rem;
-      text-align: center;
-      background: radial-gradient(circle at top left, #3f51b5, #1a1a2e);
-    }
-    header img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      margin-bottom: 1rem;
-      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
-    }
-    header h1 {
-      font-size: 2.2rem;
-      font-weight: 800;
-      background: linear-gradient(to right, #82f4e0, #c3a3f1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .typed-text {
-      color: #82f4e0;
-      font-size: 1rem;
-      margin-top: 0.8rem;
-    }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      background-color: #14141f;
-      padding: 1rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    }
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      font-size: 0.95rem;
-    }
-    nav a:hover {
-      color: #fff;
-      text-shadow: 0 0 5px #82f4e0;
-    }
-    section {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-      border-left: 4px solid #82f4e0;
-      padding-left: 1rem;
-    }
-    .glow-card {
-      background: linear-gradient(145deg, #1a1a2e, #2d2d44);
-      padding: 1.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 0 20px rgba(130, 244, 224, 0.2);
-    }
-    .glow-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 0 50px rgba(130, 244, 224, 0.3);
-    }
-    ul {
-      list-style: disc;
-      margin-left: 1.5rem;
-    }
-    .highlight {
-      color: #82f4e0;
-      font-weight: 600;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #0d0d14;
-      font-size: 0.85rem;
-      color: #999;
-      border-top: 1px solid #333;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      .typed-text {
-        font-size: 0.9rem;
-      }
-      nav a {
-        font-size: 0.85rem;
-      }
-      section h2 {
-        font-size: 1.4rem;
-      }
-      .glow-card {
-        padding: 1rem;
-      }
-    }
-  </style>
+
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/theme.css" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script defer src="./assets/js/app.js"></script>
 </head>
-<body>
-  <div id="particles-js"></div>
-  <header data-aos="fade-down">
-    <img src="AT.jpeg" alt="Alaa Taha portrait" />
-    <h1>Alaa Taha</h1>
-    <div class="typed-text" id="typed"></div>
-  </header>
+
+<body data-accent="research" data-particles="on">
+  <div id="particles-js" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="topline">
+      <div class="pill"><span class="dot"></span> Home</div>
+      <div class="pill">Medicine · Biomedical Engineering · Neurotechnology</div>
+    </div>
+  </div>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#leadership">Leadership</a>
-    <a href="#publications">Publications</a>
-    <a href="#awards">Awards</a>
-    <a href="#contact">Contact</a>
+    <div class="wrap navinner">
+      <div class="brand" aria-label="Site brand"></div>
+
+      <div class="navlinks" aria-label="Primary navigation">
+        <a href="./index.html" class="is-active">Home</a>
+        <a href="./research.html">Research</a>
+        <a href="./leadership.html">Leadership</a>
+        <a href="./publications.html">Publications</a>
+        <a href="./about.html">About</a>
+      </div>
+    </div>
   </nav>
 
-  <section id="about" class="glow-card" data-aos="fade-up">
-    <h2>About</h2>
-    <p>I am a PhD candidate in Biomedical Engineering at Western University and an incoming MD student at Stanford. My research integrates machine learning, image analysis, and anatomical coordinate systems for brain mapping and deep brain stimulation. I'm also passionate about global health equity, open-source medical software, and advancing stereotactic neurosurgery through interpretable and reproducible methods.</p>
-  </section>
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hgrid">
+        <div class="avatar">
+          <img src="./assets/img/AT.jpeg" alt="Portrait of Alaa Taha" loading="lazy" />
+        </div>
 
-  <section id="leadership" class="glow-card" data-aos="fade-up">
-    <h2>Leadership & Service</h2>
-    <ul>
-      <li>Co-Founder & Co-Executive Director – <a href="https://webstraw.ca" target="_blank">WebStraw</a><br>
-      Led development of a national student-run education platform reaching over 10,000 users.</li>
-      
-      <li>Co-Founder & Managing Director – <a href="https://refuhope.com" target="_blank">RefuHope</a><br>
-      Founded a volunteer-led nonprofit supporting refugee access to health and educational services.</li>
-      
-      <li>Editor & Producer – <a href="https://stimulatingbrains.org" target="_blank">Stimulating Brains Podcast</a><br>
-      Produced neuromodulation podcast content reaching 20,000 plays worldwide.</li>
-      
-      <li>Facilitator – Deep Brain Stimulation Patient Support Group (Western University)<br>
-      Facilitated monthly support group sessions for DBS patients and families to share experiences and resources.</li>
-      
-      <li>Chair – Biomedical Engineering Graduate Student Committee (Western University)<br>
-      Advocated for graduate student needs and organized academic and wellness initiatives.</li>
-      
-      <li>Committee Representative – Schulich School of Medicine & Dentistry and SOGS<br>
-      Served as student voice in faculty-level and university-wide graduate policy discussions.</li>
-      
-      <li>Teaching Assistant – Undergraduate Engineering (Years 1 & 2)<br>
-      Led tutorials and graded assignments for engineering undergraduate students.</li>
+        <div>
+          <h1>Alaa Taha</h1>
+          <div class="kicker"><span class="accent" id="typed"></span></div>
 
-    </ul>
-  </section>
+          <p class="subtitle">
+            My work spans research, education, and clinical translation, unified by one principle:
+            knowledge matters most when it is <span style="color:var(--text); font-weight:800;">open, shared, and able to move</span>.
+            I build work that others can understand, reuse, and carry forward.
+          </p>
 
-  <section id="publications" class="glow-card" data-aos="fade-up">
-    <h2>Publications</h2>
-    <ul>
-      <li>Abbass, M., Taha, A., Gilmore, G., Chalil, A., Santyr, B., et al. (2025). Localization and registration accuracy impact on DBS electrode estimates. <span class="highlight">Imaging Neuroscience</span>.</li>
-      <li>Haast, R.M., Kai, J., Taha, A., et al. (2024). Mapping the topographic organization of the human zona incerta using diffusion MRI. <span class="highlight">eLife</span>.</li>
-      <li>Ogunsanya, F., Taha, A., et al. (2023). MRI-degad: Towards accurate conversion of gadolinium enhanced MRI to non-contrast scans via CNNs. <span class="highlight">Int J CARS</span>.</li>
-      <li>Taha, A., et al. (2023). MRI datasets with anatomical fiducials for QC and registration. <span class="highlight">Scientific Data</span>.</li>
-      <li>Taha, A., Gilmore, G., Khan, A., & Lau, J.C. (2022). Indirect DBS targeting using anatomical fiducials. <span class="highlight">Neuromodulation</span>.</li>
-      <li>Abbass, M., Gilmore, G., Taha, A., et al. (2022). Applying anatomical fiducials to a Parkinson’s dataset. <span class="highlight">Brain Structure and Function</span>.</li>
-      <li>Elias, G.J.B., Germann, J., Loh, A., Boutet, A., Taha, A., et al. (2022). Normative connectomes and their use in DBS. <span class="highlight">Connectomic DBS, Academic Press</span>.</li>
-      <li>Germann, J., Mameli, M., Elias, G.J.B., Loh, A., Taha, A., et al. (2021). DBS of the habenula: systematic review and registry analysis. <span class="highlight">Frontiers in Psychiatry</span>.</li>
-      <li>Boutet, A., Loh, A., Chow, C., Taha, A., et al. (2021). Advances in MRI sequences for functional neurosurgery targets. <span class="highlight">Journal of Neurosurgery</span>.</li>
-    </ul>
-    <p>Full list: <a href="https://scholar.google.ca/citations?user=453eH-8AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
-  </section>
+          <!-- <div class="tags tagsInteractive" aria-label="Key themes (click to view proof)" id="tagTabs">
+            <button class="tag accent isActive" type="button" data-tag="open">Open, reproducible science</button>
+            <button class="tag" type="button" data-tag="ml">Neuroimaging + ML</button>
+            <button class="tag" type="button" data-tag="stereo">Stereotaxy + QC</button>
+            <button class="tag" type="button" data-tag="access">Access + equity</button>
+          </div> -->
+          <!-- PROOF STRIP -->
+          <div class="metrics" id="metrics-home" aria-label="Highlights"></div>
 
-  <section id="awards" class="glow-card" data-aos="fade-up">
-    <h2>Awards</h2>
-    <ul>
-      <li>NSERC CGS-D – Canada Graduate Scholarship – Doctoral ($120,000, National)</li>
-      <li>Parkinson Canada Graduate Student Award ($40,000, National)</li>
-      <li>Ontario Graduate Scholarship (2× $15,000, Provincial)</li>
-      <li>Mitacs Accelerate Fellowship ($25,000, National)</li>
-      <li>Merit Abstract Award – Organization for Human Brain Mapping (2024, International)</li>
-      <li>Best Abstract – Canadian Neuromodulation Conference (2022, National)</li>
-      <li>Best Platform Talk – Clinical Neurological Research Day (2023, Provincial)</li>
-      <li>Rising Youth Community Service Award ($5,000, National)</li>
-      <li>Dean’s List – Western University (2017–2021)</li>
-    </ul>
-  </section>
+          <div class="tagStats" aria-label="Proof for selected theme" id="tagStats">
+            <!-- JS fills this -->
+          </div>
 
-  <section id="contact" class="glow-card" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:tahaa@stanford.edu">tahaa@stanford.edu</a></p>
-    <p>GitHub: <a href="https://github.com/ataha24" target="_blank">@ataha24</a></p>
-  </section>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    &copy; 2025 Alaa Taha
-  </footer>
+    <!-- ROUTING -->
+    <section class="section">
+      <div class="sectionhead">
+        <h2>Explore</h2>
+        <div class="small">Start with the work; follow the evidence.</div>
+      </div>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ once: true });
-    new Typed('#typed', {
-      strings: [
-        'PhD in Biomedical Engineering',
-        'Incoming MD @ Stanford',
-        'Machine Learning for Neurosurgery',
-        'Advocate for Open Science',
-      ],
-      typeSpeed: 40,
-      backSpeed: 25,
-      loop: true
-    });
-    particlesJS('particles-js', {
-      particles: {
-        number: { value: 80 },
-        color: { value: '#82f4e0' },
-        shape: { type: 'circle' },
-        opacity: { value: 0.3 },
-        size: { value: 4 },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: '#82f4e0',
-          opacity: 0.2,
-          width: 1
-        },
-        move: { enable: true, speed: 2 }
-      },
-      interactivity: {
-        events: {
-          onhover: { enable: true, mode: 'grab' },
-          onclick: { enable: true, mode: 'push' }
-        },
-        modes: {
-          grab: { distance: 200, line_linked: { opacity: 0.5 } },
-          push: { particles_nb: 4 }
-        }
-      },
-      retina_detect: true
-    });
-  </script>
+      <div class="grid2">
+        <div class="panel">
+          <h3>Research</h3>
+          <p>Neuroimaging + stereotactic methods, with reproducible code and inspectable results.</p>
+          <div class="cta" style="margin-top:10px;">
+            <a class="btn primary" href="./research.html">Open Research</a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Leadership</h3>
+          <p>Platforms and programs built for access—summarized with deliverables and metrics.</p>
+          <div class="cta" style="margin-top:10px;">
+            <a class="btn primary" href="./leadership.html">Open Leadership</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED EVIDENCE -->
+    <section class="section">
+      <div class="sectionhead">
+        <h2>Featured Evidence</h2>
+        <div class="small">Three proofs. No noise.</div>
+      </div>
+
+      <div class="cards" id="cards-featured" aria-label="Featured evidence cards"></div>
+    </section>
+
+    <div class="footer">© 2025 Alaa Taha [website is still work in progress]</div>
+  </main>
 </body>
 </html>

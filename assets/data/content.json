@@ -1,0 +1,542 @@
+{
+  "home": {
+    "metrics": [
+      { "value": "10,000+", "label": "learners reached @WebStraw"},
+      { "value": "20,000+", "label": "podcast plays @StimulatingBrains" },
+      { "value": "11,000+", "label": "PPE @StudentReliefTeam" },
+      { "value": "$150,000+", "label": "project funding @PhD" },
+      { "value": "100+", "label": "citations @PhD" },
+      { "value": "10+", "label": "papers @PhD" }
+    ],
+    "items": [
+      {
+        "id": "home-research",
+        "title": "Research",
+        "meta": "measurement-first",
+        "blurb": "Reproducible brain mapping for stereotactic work: quantify error, state uncertainty, ship pipelines that rerun.",
+        "tags": ["DBS", "Neuroimaging", "QC", "Open Science"],
+        "links": [{ "label": "Open research page", "href": "./research.html" }],
+        "modal": {
+          "subtitle": "Three lanes: QC, targeting, and tooling—each backed by inspectable artifacts.",
+          "blocks": [
+            { "heading": "Non-negotiables", "bullets": ["Auditability > aesthetics", "Quantitative QC", "Explicit uncertainty"] },
+            { "heading": "What you’ll find", "bullets": ["Thematic lanes", "Selected work cards", "Links to papers/code"] }
+          ]
+        }
+      },
+      {
+        "id": "home-leadership",
+        "title": "Leadership & Service",
+        "meta": "delivery at scale",
+        "blurb": "Education, access, and community infrastructure—measured with outputs, not slogans.",
+        "tags": ["Education", "Equity", "Community"],
+        "links": [{ "label": "Open leadership page", "href": "./leadership.html" }],
+        "modal": {
+          "subtitle": "Theme-driven summary: education at scale, access + delivery, and community-building.",
+          "blocks": [
+            { "heading": "Themes", "bullets": ["Education at scale", "Access + delivery", "Community-building"] },
+            { "heading": "Receipts", "bullets": ["Platforms", "Programs", "Resources", "Outreach"] }
+          ]
+        }
+      },
+      {
+        "id": "home-publications",
+        "title": "Publications",
+        "meta": "grouped + filterable",
+        "blurb": "Selected papers grouped by theme. Filter first, then inspect the core contribution.",
+        "tags": ["DBS", "Imaging Methods", "Datasets"],
+        "links": [{ "label": "Open publications", "href": "./publications.html" }],
+        "modal": {
+          "subtitle": "Click any publication to see the contribution without reading a wall of citations.",
+          "blocks": [
+            { "heading": "Why this format", "bullets": ["Skimmable", "Evidence-first", "Less noise than a CV dump"] },
+            { "heading": "How to use it", "bullets": ["Filter topics", "Open details in modals", "Jump to external links"] }
+          ]
+        }
+      }
+    ],
+    "featured": [
+      {
+        "id": "feat-1",
+        "title": "DBS electrode estimates under localization/registration error",
+        "meta": "DBS · uncertainty",
+        "blurb": "Measures how pipeline choices shift electrode estimates—forces honest error accounting instead of ‘looks right’.",
+        "tags": ["DBS", "Registration", "Uncertainty"],
+        "links": [{ "label": "Scholar", "href": "https://scholar.google.ca/citations?user=453eH-8AAAAJ&hl=en" }],
+        "modal": {
+          "subtitle": "Method choices move the answer. This work measures how much and why it matters.",
+          "blocks": [
+            { "heading": "Problem", "bullets": ["Small pipeline differences can produce meaningful positional changes"] },
+            { "heading": "Contribution", "bullets": ["Quantified sensitivity", "Improved interpretability of estimates"] }
+          ]
+        }
+      },
+      {
+        "id": "feat-2",
+        "title": "Anatomical fiducials for measurable registration QC",
+        "meta": "QC · measurement",
+        "blurb": "Turns alignment quality into error metrics you can compare across subjects, sites, and pipelines.",
+        "tags": ["QC", "Landmarks", "Reproducibility"],
+        "links": [{ "label": "Scholar", "href": "https://scholar.google.ca/citations?user=453eH-8AAAAJ&hl=en" }],
+        "modal": {
+          "subtitle": "QC that scales beyond vibes and screenshots.",
+          "blocks": [
+            { "heading": "Problem", "bullets": ["Registration failures often stay hidden until downstream analysis breaks"] },
+            { "heading": "Contribution", "bullets": ["Landmark-based measurement", "Dataset-level summaries", "Repeatable workflow"] }
+          ]
+        }
+      },
+      {
+        "id": "feat-3",
+        "title": "Education at scale via WebStraw",
+        "meta": "platform · delivery",
+        "blurb": "Built/led an education platform with measurable reach—sustained delivery, not a one-off project.",
+        "tags": ["Education", "Platform", "Scale"],
+        "links": [{ "label": "Website", "href": "https://webstraw.ca" }],
+        "modal": {
+          "subtitle": "Leadership as infrastructure: systems that keep working after the hype.",
+          "blocks": [
+            { "heading": "Work", "bullets": ["Platform ops", "Content pipeline", "Quality control"] },
+            { "heading": "Outcome", "bullets": ["Scaled distribution", "Sustained delivery"] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "leadership": {
+    "metrics": [
+      { "value": "10,000+", "label": "learners reached · WebStraw" },
+      { "value": "20,000+", "label": "plays · Stimulating Brains" },
+      { "value": "11,000+", "label": "PPE Produced · Student Relief Team" }
+    ],
+    "themes": {
+      "education": [
+        {
+          "id": "l-edu-1",
+          "title": "WebStraw",
+          "meta": "education at scale",
+          "blurb": "Built a national education platform to reduce financial barriers—distribution-first, measurable reach.",
+          "tags": ["Platform", "Education", "Scale"],
+          "links": [{ "label": "Website", "href": "https://webstraw.ca" }],
+          "logo": "./assets/logos/webstraw.jpeg",
+          "modal": {
+            "subtitle": "Education delivery with real distribution and measurable outcomes.",
+            "blocks": [
+              {
+                "heading": "What shipped",
+                "bullets": [
+                  "100+ learning resources",
+                  "Content built with 100+ student/faculty collaborators across 3 universities",
+                  "10,000+ learners reached (North America)"
+                ]
+              },
+              {
+                "heading": "My role",
+                "bullets": [
+                  "Co-founder / leadership + operations",
+                  "Platform build + iteration (delivery, reliability, scale)",
+                  "Partnerships and systems to keep quality high as reach grew"
+                ]
+              },
+              {
+                "heading": "Artifacts",
+                "bullets": [
+                  "Public website + resource library",
+                  "Measured reach and distribution"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "l-edu-2",
+          "title": "Stimulating Brains Podcast",
+          "meta": "education through media",
+          "blurb": "Neuromodulation education via long-form interviews—production optimized for clarity and accessibility.",
+          "tags": ["Media", "Education", "Accessibility"],
+          "links": [{ "label": "Website", "href": "https://stimulatingbrains.org" }],
+          "logo": "./assets/logos/stimulatingbrains.png",
+          "modal": {
+            "subtitle": "Educational media that prioritizes signal over noise.",
+            "blocks": [
+              {
+                "heading": "What shipped",
+                "bullets": [
+                  "20,000+ plays (lifetime)",
+                  "Audio engineering workflow for consistency and intelligibility",
+                  "Accessibility work using AI tooling where helpful"
+                ]
+              },
+              {
+                "heading": "My role",
+                "bullets": [
+                  "Editor / producer (technical pipeline + quality control)",
+                  "Distribution/packaging to improve reach and retention"
+                ]
+              },
+              {
+                "heading": "Artifacts",
+                "bullets": [
+                  "Public episodes + show site",
+                  "Production pipeline and release cadence"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "access": [
+        {
+          "id": "l-acc-1",
+          "title": "RefuHope",
+          "meta": "access + delivery",
+          "blurb": "Built programs supporting newcomer integration—evidence-driven delivery, not performative advocacy.",
+          "tags": ["Equity", "Delivery", "Operations"],
+          "links": [{ "label": "Website", "href": "https://refuhope.com" }],
+          "logo": "./assets/logos/refuhope.png",
+          "modal": {
+            "subtitle": "Access work built on execution, systems, and follow-through.",
+            "blocks": [
+              {
+                "heading": "What shipped",
+                "bullets": [
+                  "Programs in translation and digital literacy",
+                  "Work expanded to refugee families in Kenya’s Kakuma Camp",
+                  "Published systematic reviews on barriers to education/healthcare (used to guide programs)"
+                ]
+              },
+              {
+                "heading": "My role",
+                "bullets": [
+                  "Co-founder / operations + external affairs",
+                  "Program design and delivery systems",
+                  "Partnership-building and scaling beyond a single site"
+                ]
+              },
+              {
+                "heading": "Artifacts",
+                "bullets": [
+                  "Public-facing site",
+                  "Program delivery + evidence base"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "l-acc-2",
+          "title": "Glia (Open-source medical hardware)",
+          "meta": "access + delivery",
+          "blurb": "Built and distributed open-source medical hardware where supply chains fail—delivery, not theory.",
+          "tags": ["Open hardware", "Medical devices", "Field delivery"],
+          "links": [],
+          "logo": "./assets/logos/glia.png",
+          "modal": {
+            "subtitle": "Access work with hard constraints: materials, validation, distribution.",
+            "blocks": [
+              {
+                "heading": "What shipped",
+                "bullets": [
+                  "3,000+ Health Canada–approved open-source stethoscopes",
+                  "Distributed to clinicians in conflict zones and underserved communities",
+                  "3D-printing + validation work focused on practical deployment"
+                ]
+              },
+              {
+                "heading": "My role",
+                "bullets": [
+                  "Contributed to design/validation and production workflow",
+                  "Built for reproducibility: open design + repeatable manufacturing"
+                ]
+              },
+              {
+                "heading": "Artifacts",
+                "bullets": [
+                  "Open-source device designs",
+                  "Manufacturing + distribution workflow"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "l-acc-3",
+          "title": "Student Relief Team (PPE delivery)",
+          "meta": "access + delivery",
+          "blurb": "Scaled PPE production and distribution during COVID—measured output, real logistics, real recipients.",
+          "tags": ["Operations", "Manufacturing", "Delivery"],
+          "links": [],
+          "logo": "./assets/logos/studentrelief.png",
+          "modal": {
+            "subtitle": "Execution-heavy delivery: production throughput and distribution coordination.",
+            "blocks": [
+              {
+                "heading": "What shipped",
+                "bullets": [
+                  "11,000+ PPE items produced and distributed",
+                  "Supported 30+ organizations",
+                  "Secured $5K grant; coordinated 200+ volunteers across 8 divisions"
+                ]
+              },
+              {
+                "heading": "My role",
+                "bullets": [
+                  "Project lead (production, coordination, distribution)",
+                  "Built systems for volunteer operations and reliable delivery"
+                ]
+              },
+              {
+                "heading": "Artifacts",
+                "bullets": [
+                  "Distribution program and partner network",
+                  "Volunteer ops structure"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "l-acc-4",
+          "title": "SAMS (patient outreach + informatics)",
+          "meta": "access + delivery",
+          "blurb": "Built patient intake + outreach systems to reduce friction in real clinical deployment contexts.",
+          "tags": ["Health informatics", "Triage", "Field deployment"],
+          "links": [],
+          "logo": "./assets/logos/sams.png",
+          "modal": {
+            "subtitle": "Clinical access is often software + process. I built both.",
+            "blocks": [
+              {
+                "heading": "What shipped",
+                "bullets": [
+                  "Patient intake application for screening/triage",
+                  "Public-facing outreach website for mission deployment"
+                ]
+              },
+              {
+                "heading": "My role",
+                "bullets": [
+                  "Built the intake workflow and interface",
+                  "Designed for clarity, speed, and low operational burden"
+                ]
+              },
+              {
+                "heading": "Artifacts",
+                "bullets": [
+                  "Intake system + outreach site"
+                ]
+              }
+            ]
+          }
+        }
+
+      ],
+      "community": [
+        {
+          "id": "l-com-1",
+          "title": "DBS Patient Support Group",
+          "meta": "community infrastructure",
+          "blurb": "Canada’s first DBS support group—reliable cadence, real continuity, lower friction for patients and families.",
+          "tags": ["DBS", "Support", "Community"],
+          "links": [],
+          "logo": "./assets/logos/parkinson.png",
+          "modal": {
+            "subtitle": "Community-building is infrastructure: cadence, trust, and continuity.",
+            "blocks": [
+              {
+                "heading": "What shipped",
+                "bullets": [
+                  "Monthly support sessions for DBS patients and families",
+                  "Clinician/researcher connection pathway + resource sharing",
+                  "Stable cadence to reduce isolation and improve continuity"
+                ]
+              },
+              {
+                "heading": "My role",
+                "bullets": [
+                  "Co-founder / facilitator",
+                  "Session design + coordination",
+                  "Operational continuity (keeping it running, not just launching it)"
+                ]
+              },
+              {
+                "heading": "Artifacts",
+                "bullets": [
+                  "Ongoing sessions + community infrastructure"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+
+  "research": {
+    "metrics": [
+      { "value": "10+", "label": "peer-reviewed papers" },
+      { "value": "10+", "label": "open dataset releases" },
+      { "value": "40+", "label": "peer-reviewer instances" }
+    ],
+    "themes": {
+      "qc": [
+        {
+          "id": "r-qc-1",
+          "title": "AFIDs: MRI datasets for QC + registration",
+          "meta": "Scientific Data · 2023",
+          "blurb": "Open dataset + fiducial framework to quantify registration and localization error rather than hiding it behind “good looking” images.",
+          "tags": ["Open data", "QC", "Registration"],
+          "links": [
+            { "label": "Find on Scholar", "href": "https://scholar.google.com/scholar?q=Magnetic%20resonance%20imaging%20datasets%20with%20anatomical%20fiducials%20for%20quality%20control%20and%20registration" }
+          ],
+          "modal": {
+            "subtitle": "Measurement-first neuroimaging QC.",
+            "blocks": [
+              { "heading": "What it is", "bullets": ["Anatomical fiducials (AFIDs) dataset", "Designed to quantify error directly"] },
+              { "heading": "Why it matters", "bullets": ["Makes QC comparable across methods", "Turns “trust” into measurable deltas"] }
+            ]
+          }
+        },
+        {
+          "id": "r-qc-2",
+          "title": "Localization + registration accuracy → DBS electrode estimates",
+          "meta": "Imaging Neuroscience · 2025",
+          "blurb": "Quantifies how localization + registration uncertainty propagates into electrode position estimates in stereotactic space.",
+          "tags": ["DBS", "Stereotaxy", "Uncertainty"],
+          "links": [
+            { "label": "Find on Scholar", "href": "https://scholar.google.com/scholar?q=The%20impact%20of%20localization%20and%20registration%20accuracy%20on%20estimates%20of%20deep%20brain%20stimulation%20electrode%20position%20in%20stereotactic%20space" }
+          ],
+          "modal": {
+            "subtitle": "If error isn’t explicit, it’s just hidden.",
+            "blocks": [
+              { "heading": "Core question", "bullets": ["How much does registration/localization move your answer?"] },
+              { "heading": "Output", "bullets": ["Error becomes visible", "Clinical credibility improves when assumptions are inspectable"] }
+            ]
+          }
+        },
+        {
+          "id": "r-qc-3",
+          "title": "AFIDs framework in a clinical patient dataset",
+          "meta": "Brain Structure & Function · 2022",
+          "blurb": "Applies fiducial-based QC to clinical imaging to audit alignment quality rather than assuming it.",
+          "tags": ["Clinical data", "QC", "Auditability"],
+          "links": [
+            { "label": "Find on Scholar", "href": "https://scholar.google.com/scholar?q=Application%20of%20the%20anatomical%20fiducials%20framework%20to%20a%20clinical%20dataset%20of%20patients" }
+          ]
+        }
+      ],
+      "targeting": [
+        {
+          "id": "r-tgt-1",
+          "title": "Topographic organization of the human zona incerta",
+          "meta": "2024",
+          "blurb": "Diffusion MRI mapping of ZI organization to support interpretable targeting and anatomically grounded hypotheses.",
+          "tags": ["Anatomy", "Targeting", "Diffusion MRI"],
+          "links": [
+            { "label": "Find on Scholar", "href": "https://scholar.google.com/scholar?q=Mapping%20the%20topographic%20organization%20of%20the%20human%20zona%20incerta%20using%20diffusion%20MRI" }
+          ],
+          "modal": {
+            "subtitle": "Interpretability over pretty maps.",
+            "blocks": [
+              { "heading": "Goal", "bullets": ["Make organization legible", "Support targeting decisions with anatomy-aware evidence"] }
+            ]
+          }
+        },
+        {
+          "id": "r-tgt-2",
+          "title": "MRI sequence advances for functional neurosurgery targets",
+          "meta": "Journal of Neurosurgery · 2021",
+          "blurb": "Review of MRI sequence advances relevant to visualizing functional neurosurgery targets.",
+          "tags": ["Review", "Targets", "MRI"],
+          "links": [
+            { "label": "Find on Scholar", "href": "https://scholar.google.com/scholar?q=A%20literature%20review%20of%20magnetic%20resonance%20imaging%20sequence%20advancements%20in%20visualizing%20functional%20neurosurgery%20targets" }
+          ]
+        },
+        {
+          "id": "r-tgt-3",
+          "title": "DBS of the habenula: systematic review",
+          "meta": "Frontiers in Psychiatry · 2021",
+          "blurb": "Synthesizes evidence + clinical trial landscape for habenula DBS.",
+          "tags": ["DBS", "Systematic review", "Neuropsychiatry"],
+          "links": [
+            { "label": "Find on Scholar", "href": "https://scholar.google.com/scholar?q=Deep%20brain%20stimulation%20of%20the%20habenula%3A%20systematic%20review%20of%20the%20literature%20and%20clinical%20trial%20registries" }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "id": "r-tool-1",
+          "title": "Indirect DBS targeting tool using salient anatomical fiducials",
+          "meta": "Neuromodulation · 2022",
+          "blurb": "Targeting workflow grounded in identifiable landmarks to improve interpretability when direct visualization is limited.",
+          "tags": ["Tooling", "Stereotaxy", "DBS"],
+          "links": [
+            { "label": "Find on Scholar", "href": "https://scholar.google.com/scholar?q=An%20Indirect%20Deep%20Brain%20Stimulation%20Targeting%20Tool%20Using%20Salient%20Anatomical%20Fiducials" }
+          ],
+          "modal": {
+            "subtitle": "Landmark-based targeting that other people can actually rerun.",
+            "blocks": [
+              { "heading": "Design principle", "bullets": ["Explainable inputs", "Auditable geometry", "Works under stereotactic constraints"] }
+            ]
+          }
+        },
+        {
+          "id": "r-tool-2",
+          "title": "MRI-degad: contrast-enhanced → non-contrast conversion",
+          "meta": "Int J CARS · 2024",
+          "blurb": "CNN-based conversion of gadolinium-enhanced MRI to non-contrast, targeting practical deployment constraints.",
+          "tags": ["ML", "Imaging", "Deployment"],
+          "links": [
+            { "label": "Find on Scholar", "href": "https://scholar.google.com/scholar?q=MRI-degad%3A%20toward%20accurate%20conversion%20of%20gadolinium-enhanced%20MRI%20to%20non-contrast-enhanced%20MRI" }
+          ]
+        },
+        {
+          "id": "r-tool-3",
+          "title": "Reproducible pipelines: Snakebids",
+          "meta": "Software release",
+          "blurb": "BIDS-first workflow scaffolding for reproducible neuroimaging pipelines that survive other people’s hands.",
+          "tags": ["Reproducibility", "Pipelines", "BIDS"],
+          "links": [
+            { "label": "GitHub", "href": "https://github.com/khanlab/snakebids" }
+          ]
+        }
+      ]
+    }
+  },
+
+  "publications": {
+    "items": [
+      {
+        "id": "p-1",
+        "title": "Localization and registration accuracy impact on DBS electrode estimates",
+        "venue": "Imaging Neuroscience",
+        "year": "2025",
+        "authors": "Abbass, M., Taha, A., Gilmore, G., et al.",
+        "topics": ["DBS", "Registration", "Uncertainty"],
+        "links": [{ "label": "Scholar", "href": "https://scholar.google.ca/" }],
+        "modal": {
+          "blocks": [
+            { "heading": "Core contribution", "bullets": ["Quantifies sensitivity of estimates to method choices"] },
+            { "heading": "Why it matters", "bullets": ["Forces honest error accounting in DBS localization"] }
+          ]
+        }
+      },
+      {
+        "id": "p-2",
+        "title": "Mapping the topographic organization of the human zona incerta using diffusion MRI",
+        "venue": "eLife",
+        "year": "2024",
+        "authors": "Haast, R.M., Kai, J., Taha, A., et al.",
+        "topics": ["Anatomy", "Diffusion MRI", "Targeting"],
+        "links": [{ "label": "Scholar", "href": "https://scholar.google.ca/" }],
+        "modal": {
+          "blocks": [
+            { "heading": "Core contribution", "bullets": ["Maps organization of ZI using diffusion-based approaches"] },
+            { "heading": "Use", "bullets": ["Supports target characterization + hypothesis generation"] }
+          ]
+        }
+      }
+    ]
+  }
+}
