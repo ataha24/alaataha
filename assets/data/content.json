@@ -379,7 +379,7 @@
       { "value": "10+", "label": "open dataset releases" },
       { "value": "40+", "label": "peer-reviewer instances" }
     ],
-    "themes": {
+    "lanes": {
       "qc": [
         {
           "id": "r-qc-1",
@@ -394,7 +394,7 @@
             "subtitle": "Measurement-first neuroimaging QC.",
             "blocks": [
               { "heading": "What it is", "bullets": ["Anatomical fiducials (AFIDs) dataset", "Designed to quantify error directly"] },
-              { "heading": "Why it matters", "bullets": ["Makes QC comparable across methods", "Turns “trust” into measurable deltas"] }
+              { "heading": "Why it matters", "bullets": ["Makes QC comparable across methods", "Turns “trust” into measurable millimeters"] }
             ]
           }
         },
@@ -508,35 +508,106 @@
   "publications": {
     "items": [
       {
-        "id": "p-1",
-        "title": "Localization and registration accuracy impact on DBS electrode estimates",
-        "venue": "Imaging Neuroscience",
-        "year": "2025",
-        "authors": "Abbass, M., Taha, A., Gilmore, G., et al.",
-        "topics": ["DBS", "Registration", "Uncertainty"],
-        "links": [{ "label": "Scholar", "href": "https://scholar.google.ca/" }],
-        "modal": {
-          "blocks": [
-            { "heading": "Core contribution", "bullets": ["Quantifies sensitivity of estimates to method choices"] },
-            { "heading": "Why it matters", "bullets": ["Forces honest error accounting in DBS localization"] }
-          ]
-        }
+        "id": "boutet-2021-jneurosurg-mri-sequence-fn-targets",
+        "title": "A literature review of magnetic resonance imaging sequence advancements in visualizing functional neurosurgery targets",
+        "authors": "Alexandre Boutet; Aaron Loh; Clement T Chow; Alaa Taha; Gavin JB Elias; Clemens Neudorfer; Jurgen Germann; Michelle Paff; Ludvic Zrinzo; Alfonso Fasano; et al.",
+        "venue": "Journal of Neurosurgery",
+        "year": 2021,
+        "topics": ["Neuroradiology", "Neurosurgery", "Neuromodulation"],
+        "links": [],
+        "abstractish": "Review of MRI sequence advancements for visualization of functional neurosurgery targets."
       },
       {
-        "id": "p-2",
+        "id": "germann-2021-frontierspsychiatry-habenula-dbs-sr",
+        "title": "Deep brain stimulation of the habenula: systematic review of the literature and clinical trial registries",
+        "authors": "Jürgen Germann; Manuel Mameli; Gavin JB Elias; Aaron Loh; Alaa Taha; Flavia Venetucci Gouveia; Alexandre Boutet; Andres M Lozano",
+        "venue": "Frontiers in Psychiatry",
+        "year": 2021,
+        "topics": ["Neuromodulation", "Habenula", "Neurosurgery", "Psychiatry"],
+        "links": [],
+        "abstractish": "Systematic review of habenula DBS evidence, including clinical trial registries."
+      },
+      {
+        "id": "elias-2022-bookchapter-normative-connectomes-dbs",
+        "title": "Normative connectomes and their use in DBS",
+        "authors": "Gavin JB Elias; Jürgen Germann; Aaron Loh; Alexandre Boutet; Alaa Taha; Emily HY Wong; Roohie Parmar; Andres M Lozano",
+        "venue": "Book Chapter",
+        "year": 2022,
+        "topics": ["Connectomics", "Neuromodulation"],
+        "links": [],
+        "abstractish": "Book chapter on normative connectomes and applications in DBS targeting/interpretation."
+      },
+      {
+        "id": "abbass-2022-brainstructfunct-afids-parkinsons",
+        "title": "Application of the anatomical fiducials framework to a clinical dataset of patients with Parkinson’s disease",
+        "authors": "Mohamad Abbass; Greydon Gilmore; Alaa Taha; Ryan Chevalier; Magdalena Jach; Terry M Peters; Ali R Khan; Jonathan C Lau",
+        "venue": "Brain Structure and Function",
+        "year": 2022,
+        "topics": ["Landmarks", "Neuroradiology", "QC", "Registration", "Parkinson’s"],
+        "links": [],
+        "abstractish": "Applies anatomical fiducials (AFIDs) to a Parkinson’s disease clinical dataset for registration quality assessment."
+      },
+      {
+        "id": "taha-2022-neuromodulation-afids-indirect-targeting-tool",
+        "title": "An Indirect Deep Brain Stimulation Targeting Tool Using Salient Anatomical Fiducials",
+        "authors": "Alaa Taha; Greydon Gilmore; Ali Khan; Jonathan C Lau",
+        "venue": "Neuromodulation",
+        "year": 2022,
+        "topics": ["Neuromodulation", "Landmarks", "Machine Learning", "Neurosurgery"],
+        "links": [],
+        "abstractish": "Abstract/short paper describing an indirect DBS targeting tool using salient anatomical fiducials."
+      },
+      {
+        "id": "taha-2023-scidata-mri-datasets-afids-qc-registration",
+        "title": "Magnetic resonance imaging datasets with anatomical fiducials for quality control and registration",
+        "authors": "Alaa Taha; Greydon Gilmore; Mohamad Abbass; Jason Kai; Tristan Kuehn; John Demarco; Geetika Gupta; Chris Zajner; Daniel Cao; Ryan Chevalier; et al.",
+        "venue": "Scientific Data",
+        "year": 2023,
+        "topics": ["Open Data", "Landmarks", "Neuroradiology", "QC", "Registration"],
+        "links": [],
+        "abstractish": "Open MRI datasets annotated with anatomical fiducials to support QC and registration benchmarking."
+      },
+      {
+        "id": "abbass-2025-imagingneurosci-localization-registration-dbs-electrode",
+        "title": "The impact of localization and registration accuracy on estimates of deep brain stimulation electrode position in stereotactic space",
+        "authors": "Mohamad Abbass; Alaa Taha; Greydon Gilmore; Brendan Santyr; Alan Chalil; Mandar Jog; Keith MacDougall; Andrew G Parrent; Terry M Peters; Jonathan C Lau",
+        "venue": "Im. Neuroscience",
+        "year": 2025,
+        "topics": ["Neurosurgery", "Registration", "Neuroradiology"],
+        "links": [],
+        "abstractish": "Quantifies how localization and registration errors propagate to DBS electrode position estimates in stereotactic space."
+      },
+      {
+        "id": "ogunsanya-2024-ijcars-mri-degad-cnn-gad-to-noncontrast",
+        "title": "MRI-degad: toward accurate conversion of gadolinium-enhanced T1w MRIs to non-contrast-enhanced scans using CNNs",
+        "authors": "Feyi Ogunsanya; Alaa Taha; Greydon Gilmore; Jason Kai; Tristan Kuehn; Arun Thurairajah; Mauricio C Tenorio; Ali R Khan; Jonathan C Lau",
+        "venue": "IJCARS",
+        "year": 2024,
+        "topics": ["Deep Learning", "Neuroradiology"],
+        "links": [],
+        "abstractish": "CNN-based conversion of gadolinium-enhanced T1w MRI to synthetic non-contrast scans."
+      },
+      {
+        "id": "haast-2024-biorxiv-zona-incerta-topography-dmri",
         "title": "Mapping the topographic organization of the human zona incerta using diffusion MRI",
+        "authors": "Roy AM Haast; Jason Kai; Alaa Taha; Violet Liu; Greydon Gilmore; Maxime Guye; Ali R Khan; Jonathan C Lau",
         "venue": "eLife",
-        "year": "2024",
-        "authors": "Haast, R.M., Kai, J., Taha, A., et al.",
-        "topics": ["Anatomy", "Diffusion MRI", "Targeting"],
-        "links": [{ "label": "Scholar", "href": "https://scholar.google.ca/" }],
-        "modal": {
-          "blocks": [
-            { "heading": "Core contribution", "bullets": ["Maps organization of ZI using diffusion-based approaches"] },
-            { "heading": "Use", "bullets": ["Supports target characterization + hypothesis generation"] }
-          ]
-        }
+        "year": 2024,
+        "topics": ["Diffusion MRI", "Tractography", "Zona Incerta", "Neuroradiology", "Neuromodulation"],
+        "links": [],
+        "abstractish": "Diffusion MRI mapping of the topographic organization of the human zona incerta."
+      },
+      {
+        "id": "karat-2025-biorxiv-hippocampal-gm-alzheimers",
+        "title": "Hippocampal grey matter changes across scales in Alzheimer’s Disease",
+        "authors": "Bradley G Karat; Mahdieh Varvani Farahani; Malcolm Davidson; Arun Thurairajah; Alaa Taha; Taylor W Schmitz; Ali R Khan; Alzheimer’s Disease Neuroimaging Initiative",
+        "venue": "preprint",
+        "year": 2025,
+        "topics": ["Hippocampus", "Alzheimer’s", "Neuroradiology"],
+        "links": [],
+        "abstractish": "Multi-scale characterization of hippocampal gray matter changes in Alzheimer’s disease."
       }
     ]
   }
 }
+

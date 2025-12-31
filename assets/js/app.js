@@ -388,15 +388,17 @@ async function init(){
   renderMetrics('metrics-leadership', content.leadership.metrics || []);
 
   // cards
+  
   renderCards('cards-home', content.home.items || []);
   renderCards('cards-featured', content.home.featured || []);
-  renderCards('cards-research-qc', content.research.lanes.qc || []);
-  renderCards('cards-research-targeting', content.research.lanes.targeting || []);
-  renderCards('cards-research-tools', content.research.lanes.tools || []);
+  renderCards('cards-research-qc', content.research?.lanes?.qc || []);
+  renderCards('cards-research-targeting', content.research?.lanes?.targeting || []);
+  renderCards('cards-research-tools', content.research?.lanes?.tools || []);
 
-  renderCards('cards-lead-education', content.leadership.themes.education || []);
-  renderCards('cards-lead-access', content.leadership.themes.access || []);
-  renderCards('cards-lead-community', content.leadership.themes.community || []);
+  renderCards('cards-lead-education', content.leadership?.themes?.education || []);
+  renderCards('cards-lead-access', content.leadership?.themes?.access || []);
+  renderCards('cards-lead-community', content.leadership?.themes?.community || []);
+
 
   // publications page filters
   if ($('#pub-chips') && $('#pub-list')){

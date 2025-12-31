@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research | Alaa Taha</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./assets/css/base.css" />
   <link rel="stylesheet" href="./assets/css/theme.css" />
   <script defer src="./assets/js/app.js"></script>
@@ -18,7 +20,7 @@
   <div class="wrap">
     <div class="topline">
       <div class="pill"><span class="dot"></span> Research</div>
-      <div class="pill">Themes → Metrics → Evidence</div>
+      <div class="pill">Measurement → Automation → Evidence</div>
     </div>
   </div>
 
@@ -36,19 +38,107 @@
   </nav>
 
   <main class="wrap">
+    <!-- HERO / METRICS -->
     <section class="section">
       <div class="sectionhead">
         <h2 class="page-title">Research</h2>
         <div class="small">Reproducible, interpretable, stereotaxy-aware.</div>
       </div>
-        <p class="page-sub">
-          I build open, reproducible neuroimaging methods for stereotactic work—tools where error is measurable, uncertainty is explicit,
-          and results can be rerun by others without guesswork.
-        </p>
+
+      <p class="page-sub">
+        I build open, reproducible neuroimaging methods for stereotactic work—tools where error is measurable,
+        uncertainty is explicit, and results can be rerun by others without guesswork.
+      </p>
+
       <div class="metrics" id="metrics-research"></div>
+
+      <!-- metrics (JS fills) -->
+      <div class="metrics heroMetrics" id="metrics-research" aria-label="Research highlights"></div>
+
+      <!-- <div class="heroCTAs">
+        <a class="btn primary" href="#talks">Watch the talks</a>
+        <a class="btn primary" href="#lane-qc">Browse the evidence</a>
+      </div> -->
     </section>
 
-    <section class="section">
+    <!-- TALKS (put this BEFORE lanes) -->
+    <!-- <section class="section" id="talks">
+      <div class="sectionhead">
+        <h2>Research Talks</h2>
+        <div class="small">One arc: measurement → automation.</div>
+      </div>
+
+      <div class="talkArc">
+        <div class="talkArc-copy">
+          <p class="page-sub">
+            Invited oral talks at the Organization for Human Brain Mapping (OHBM) in 2024 and 2025—selected from
+            <strong>&lt;5%</strong> of submitted abstracts. This work progresses from a measurement-first framework (AFIDs)
+            to a deployable deep learning system (AutoAFIDs).
+          </p>
+
+          <div class="arcSteps">
+            <div class="arcStep">
+              <div class="arcNum">01</div>
+              <div>
+                <div class="arcTitle">AFIDs · 2024</div>
+                <div class="arcDesc">Quantify registration + localization error directly—make uncertainty explicit.</div>
+              </div>
+            </div>
+
+            <div class="arcDivider" aria-hidden="true"></div>
+
+            <div class="arcStep">
+              <div class="arcNum">02</div>
+              <div>
+                <div class="arcTitle">AutoAFIDs · 2025</div>
+                <div class="arcDesc">Automate landmark localization at scale—QC and targeting become deployable.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="talkArc-media">
+          <div class="talkCard">
+            <div class="talkMeta">
+              <span class="talkYear">2024</span>
+              <span class="talkTag">Framework</span>
+            </div>
+            <div class="videoFrame">
+              <iframe
+                src="https://www.youtube.com/embed/yulD_Lz0Ef8"
+                title="AFIDs framework — OHBM 2024"
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="talkCaption">
+              <strong>AFIDs:</strong> makes registration and localization error explicit and comparable.
+            </div>
+          </div>
+
+          <div class="talkCard">
+            <div class="talkMeta">
+              <span class="talkYear">2025</span>
+              <span class="talkTag">Automation</span>
+            </div>
+            <div class="videoFrame">
+              <iframe
+                src="https://www.youtube.com/embed/tqKYUVjt5JA"
+                title="AutoAFIDs — OHBM 2025"
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="talkCaption">
+              <strong>AutoAFIDs:</strong> deep learning–based landmark localization enabling scalable QC and targeting.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- LANES -->
+    <section class="section" id="lane-qc">
       <div class="sectionhead">
         <h2>Lane 1: Measurement & QC</h2>
         <div class="small">Make errors visible, comparable, and actionable.</div>
@@ -56,7 +146,7 @@
       <div class="cards" id="cards-research-qc"></div>
     </section>
 
-    <section class="section">
+    <section class="section" id="lane-targeting">
       <div class="sectionhead">
         <h2>Lane 2: Targeting & Anatomy</h2>
         <div class="small">Interpretability and uncertainty over “pretty maps.”</div>
@@ -64,7 +154,7 @@
       <div class="cards" id="cards-research-targeting"></div>
     </section>
 
-    <section class="section">
+    <section class="section" id="lane-tools">
       <div class="sectionhead">
         <h2>Lane 3: Reproducible Tooling</h2>
         <div class="small">Pipelines that survive other people’s hands.</div>
